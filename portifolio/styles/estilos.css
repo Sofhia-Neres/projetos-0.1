@@ -24,6 +24,8 @@
 body{
     background-color: black;
     color:white;
+    overflow-x: hidden;
+    
 }
 
 nav{
@@ -45,7 +47,7 @@ nav > h1{
 
 nav > h1 > span{
     color: var(--verde);
-    text-shadow: 2px 2px 5px var(--sombra-verde);
+    text-shadow: 1px 1px 1px var(--sombra-verde);
 }
 
 nav > i{
@@ -134,6 +136,10 @@ nav > i{
     text-shadow: 1px 1px 20px var(--sombra-verde);
     transition: 0.4s;
     cursor: pointer;
+}
+
+.button{
+    display: none;
 }
 
 .skins{
