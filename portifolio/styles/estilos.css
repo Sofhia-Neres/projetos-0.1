@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+@keyframes mark{
+    50%{
+        border-right: transparent;
+    }
+
+}
+
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde:rgb(216, 0, 0);
+    --sombra-verde:rgba(174, 18, 18, 0.614);
+}
+
+body{
+    background-color: black;
+    color:white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.nav-all{
+    display: none;
+}
+
+nav > h1{
+    font-size: 25px;
+}
+
+nav > h1 > span{
+    color: var(--verde);
+    text-shadow: 2px 2px 5px #036403a7;
+}
+
+nav > i{
+    font-size: 25px;
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+
+.imagem-perfil{
+    background-image: url(../img/samurai-pfp-3413.png);
+    background-position: top center;
+    background-size: cover;
+    border-radius: 40%;
+
+
+    box-shadow: 0px 0px 50px var(--sombra-verde);
+    margin-top: 30px;
+    height: 350px;
+    width: 270px;
+    margin-top: 30px;
+    z-index: 2;
+    
+}
+
+.descricao-perfil{
+    margin-top: 10px;
+    
+}
+
+.text{
+    padding: 20px;
+}
+
+.descricao-perfil > .text > h1{
+    font-size: 25px; 
+}
+
+.descricao-perfil > .text > #digitar{
+    font-size: 15px;
+}
+
+.descricao-perfil > .text > #digitar > span{
+    position: relative;
+    white-space: nowrap;
+}
+
+.descricao-perfil > .text > #digitar > span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-left: 2px solid white;
+
+    animation: animate 6s steps(24) infinite;
+    
+
+}
+
+
+.descricao-perfil > .text > h1> span{
+    text-shadow: 0px 0px 6px var(--sombra-verde);
+    color: var(--verde);
+}
+
+.menu-social{
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+
+.menu-social > i{
+    font-size: 20px;
+    color: var(--verde);
+    transition: 0.4s;
+}
+
+.menu-social > i:hover{
+    transform: translateY(-2px);
+    text-shadow: 1px 1px 20px var(--sombra-verde);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.skins{
+    margin-top: 20px;
+    background-color: rgb(35, 35, 35);
+    padding: 10px;
+}
+
+.text-skins{
+    display: flex;
+    justify-content: center;
+}
+
+.container-skins{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 3px solid rgb(219, 10, 10);
+    padding: 10px;
+
+}
+
+.container-skins > .item-skin{
+    border: 4px solid rgb(70, 14, 14);
+    background-image: url(../img/css-removebg-preview.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 90px;
+    height: 90px;
+    transition: 0.6s ease;
+
+    
+}
+
+.container-skins > .item-skin:hover{
+    background-color: rgb(212, 68, 68);
+    transition: 0.4s ease;
+}
+
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.text-servicos{
+    border-radius: 10px;
+    margin: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: rgb(61, 8, 8);
+    line-height: 25px;
+}
+
+.text-servicos  > p > span{
+    font-weight: bold;
+}
+
+
+
+
+
+.container-skins > #html{
+    background-image: url(../img/file-7084006_640-removebg-preview.png);
+}
+
+.container-skins > #excel{
+    background-image: url(../img/excel-removebg-preview.png);
+}
+
+
+
+
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+
+    100%{
+        left: 0%;
+    }
+}
+
+
+
+

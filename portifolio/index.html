@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofhia Neres</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <h1>Sofhia <span>Neres</span></h1>
+        <div class="nav-all">
+            <ul class="item-menu-all">
+                <li class="link-menu-all">
+                    <a href="">Habilidades</a>
+                </li>
+                <li class="link-menu-all">
+                    <a href="">Projetos</a>
+                </li>
+                <li class="link-menu-all">
+                    <a href="">Currículo</a>
+                </li>
+                <li class="link-menu-all">
+                    <a href="">Contate-me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container-img">
+            <div class="imagem-perfil">
+                
+            </div>
+        </div>
+            
+        <div class="descricao-perfil">
+            <div class="text">
+                <h1>Olá me chamo <span>Sofhia</span></h1>
+                <h1 id="digitar">Eu sou <span>DS</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti modi voluptates nobis adipisci quisquam similique ab ad, iste alias perspiciatis deleniti quis, sapiente vel, officia nostrum placeat distinctio minus optio?</p>
+            </div>
+            <div class="menu-social">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="habilidades">
+            <div id="item-1">
+
+            </div>
+            <div id="item-2">
+                
+            </div>
+        </div>
+    </main>
+    <div class="skins">
+        <div class="text-skins">
+            <h1>Skins</h1>
+        </div>
+        <div class="container-skins">
+            <div class="item-skin" id="css">
+            </div>
+            <div class="item-skin" id="html">
+            </div>
+            <div class="item-skin" id="excel">
+            </div>
+            <div class="item-skin" id="js"></div>
+        </div>
+    </div>
+
+    <div class="servicos">
+        <div class="text-servicos">
+            <p><span>Landing page</span> <br> Uma Landing Page é uma página web desenvolvida com o objetivo de capturar a atenção do público e converter visitantes em clientes ou leads. Geralmente, ela é projetada para promover um produto, serviço ou campanha específica, oferecendo informações claras e um call-to-action (chamada para ação) estratégico, como “assine agora” ou “saiba mais”. Suas características principais são o design limpo, foco em um único objetivo e a otimização para gerar resultados.</p>
+        </div>
+        <div class="text-servicos">
+            <p><span>Planilha</span> <br>
+                As planilhas são ferramentas versáteis para organização e gestão de dados. Ideais para criar controles financeiros, relatórios ou planejamento de atividades, elas permitem personalização com fórmulas, gráficos e automações. Com sua estrutura em linhas e colunas, facilitam a visualização e o acompanhamento de informações importantes, sendo úteis para pessoas e empresas em diversos setores.</p>
+        </div>
+    </div>
+
+
+    <script>
+        const text = document.querySelector('#digitar span');
+        let isFirstText = true; // Variável para alternar os textos
+
+        const textLoad = () => {
+            if (isFirstText) {
+                text.innerHTML = "Desenvolvedor de sistemas"; // Primeiro texto
+            } else {
+                text.innerHTML = "Desenvolvedor web"; // Segundo texto
+            }
+            isFirstText = !isFirstText; // Alterna o valor da variável
+            setTimeout(textLoad, 6000); // Chama a função novamente após 4 segundos
+        };
+
+        textLoad(); // Inicia o ciclo
+
+    </script>
+</body>
+</html>
