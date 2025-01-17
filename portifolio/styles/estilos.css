@@ -31,6 +31,8 @@ nav{
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(75, 73, 73);
 }
 
 .nav-all{
@@ -136,7 +138,7 @@ nav > i{
 
 .skins{
     margin-top: 20px;
-    background-color: #232323;
+    background-color: #161515;
     padding: 10px;
 }
 
@@ -148,21 +150,24 @@ nav > i{
 .container-skins{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    border: 3px solid rgb(219, 10, 10);
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(154, 48, 24, 0.819);
     padding: 10px;
+    border-radius: 10px;
 
 }
 
 .container-skins > .item-skin{
-    border: 4px solid rgb(70, 14, 14);
+    background-color: rgb(0, 0, 0);
     background-image: url(../img/css-removebg-preview.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    width: 250px;
-    height: 250px;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
     transition: 0.6s ease;
     margin: 5px;
 
@@ -170,30 +175,46 @@ nav > i{
 }
 
 .container-skins > .item-skin:hover{
-    background-color: rgb(212, 68, 68);
+    background-color: rgb(255, 252, 252);
     transition: 0.4s ease;
 }
 
 .servicos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+
     padding: 10px;
-    margin-top: 10px;
 }
 
-.servicos > .servicos-titulo {
+ .servicos-titulo {
+    margin-top: 10px;
+    background-color: black;
+    padding: 5px;
     display: flex;
     justify-content: center;
-    margin-left: 15%;
+    font-size: 20px;
+    
 }
 
 .text-servicos{
+    width: 300px;
     border-radius: 10px;
     margin: 5px;
-    border: 2px solid rgb(210, 99, 8);
     padding: 10px;
-    background-color: rgb(61, 8, 8);
+    background-color: rgb(154, 48, 24);
     line-height: 25px;
+
+    transition: 0.20s;
+}
+
+.text-servicos:hover{
+    background-color: black;
+    border: 1px solid rgb(154, 48, 24);
+    color: rgb(154, 48, 24);
+
+    transition: 0.20s;
 }
 
 .text-servicos  > p > span{
