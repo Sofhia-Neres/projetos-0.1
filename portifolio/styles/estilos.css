@@ -125,13 +125,13 @@ nav > i{
     justify-content: space-around;
 }
 
-.menu-social > i{
+.menu-social > a > i{
     font-size: 20px;
     color: var(--verde);
     transition: 0.4s;
 }
 
-.menu-social > i:hover{
+.menu-social > a > i:hover{
     transform: translateY(-2px);
     text-shadow: 1px 1px 20px var(--sombra-verde);
     transition: 0.4s;
