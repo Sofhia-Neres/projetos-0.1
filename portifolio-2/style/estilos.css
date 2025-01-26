@@ -1,159 +1,206 @@
-*{
+/* Reset e configuração global */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial;
+    font-family: Arial, sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-header{
-    height: 500px;
+/* Estilo do header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    text-align: center;
 }
 
-header > .background-header{
+header > .background-header {
     background-image: url(../img/3428.jpg);
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 150px;
-
-    position: relative;
 }
 
-header > .foto-descricao{
-    width: 300px;
-    height: 300px;
-
-    position: absolute;
-    left: 50%;
-    top: 13%;
-    transform: translateX(-50%);
-
+header > .foto-descricao {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: -50px; /* Para sobrepor a imagem de fundo */
 }
 
-header > .foto-descricao > .foto-perfil > img{
+header > .foto-descricao > .foto-perfil > img {
     width: 140px;
     border-radius: 10px;
-    box-shadow: 8px 6px;
+    box-shadow: 8px 6px rgba(0, 0, 0, 0.5);
 }
 
-header > .foto-descricao > .text-perfil{
+header > .foto-descricao > .text-perfil {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 100x;
+    width: 90%; /* Responsivo */
+    max-width: 400px;
 }
 
-header > .foto-descricao > .text-perfil > h1 > i{
+header > .foto-descricao > .text-perfil > h1 > i {
     background-color: #CBE60B;
     padding: 5px;
     border-radius: 5px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-header > .foto-descricao > .text-perfil > p{
+header > .foto-descricao > .text-perfil > p {
     color: #74756E;
     text-align: justify;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-header > .foto-descricao > .text-perfil > #p-descricao{
-    font-size: 15px;
+header > .foto-descricao > .text-perfil > #p-descricao {
+    font-size: 14px;
 }
 
-main{
-    margin-top: 70%;
-}
-
-main > .container-i-am{
+/* Estilo do main */
+main {
+    margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > .container-i-am {
+    display: flex;
+    justify-content: center;
     align-items: start;
     flex-wrap: wrap;
+    gap: 15px;
     padding: 20px;
-    display: flex;
-    align-items: start;
-    
 }
 
-main > .container-i-am > .item-i-am{
+main > .container-i-am > .item-i-am {
     width: 150px;
-    height: 100px;
+    height: auto;
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 4px 4px #030401;
-    margin-bottom: 7px;
-
+    padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main > .container-i-am > .item-i-am > p {
+    font-size: 14px;
+}
+
+/* Estilo das skills */
+.skills {
+    padding: 20px;
+    text-align: center;
+}
+
+.skills > h1 {
     position: relative;
-    
+    margin-bottom: 20px;
 }
 
-
-
-main > .container-i-am > .item-i-am > p{
-    padding: 5px;
-    position: absolute;
-    top: 10%;
-}
-
-.skills{
-    padding: 10px;
-}
-
-.skills > h1{
-    position: relative;
-}
-
-.skills > h1::after{
+.skills > h1::after {
     content: "";
     position: absolute;
     top: 60%;
-    left: 4%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 80px;
     height: 10px;
-    background-color:  #0be6cc;
+    background-color: #0be6cc;
     z-index: -1;
     border-radius: 2px;
 }
 
-.skills > p{
+.skills > p {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.skills > .container-barra{
+.skills > .container-barra {
     width: 300px;
     height: 30px;
     border-radius: 5px;
     margin-bottom: 10px;
-
     background-color: #ffffff;
     border: 4px solid black;
+    overflow: hidden;
 }
 
-.skills > .container-barra > .barra{
-    width: 280px;
+.skills > .container-barra > .barra {
     height: 22px;
-
     background-color: #0be6cc;
     z-index: 500;
 }
 
-#html{
+#html {
     width: 288px;
 }
 
-#js{
+#js {
     width: 100px;
 }
 
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header > .foto-descricao {
+        gap: 5px;
+    }
+
+    header > .foto-descricao > .foto-perfil > img {
+        width: 100px;
+    }
+
+    header > .foto-descricao > .text-perfil {
+        width: 100%;
+    }
+
+    main > .container-i-am {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > .container-i-am > .item-i-am {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .skills > .container-barra {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header > .background-header {
+        height: 100px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    main > .container-i-am > .item-i-am > p {
+        font-size: 12px;
+    }
+}
