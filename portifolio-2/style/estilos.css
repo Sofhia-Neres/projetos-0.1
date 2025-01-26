@@ -6,6 +6,7 @@
 }
 
 body{
+    overflow-x: hidden;
 }
 
 
@@ -64,13 +65,18 @@ header > .foto-descricao > .text-perfil > #p-descricao{
     font-size: 15px;
 }
 
+main{
+    margin-top: 70%;
+}
+
 main > .container-i-am{
     display: flex;
     justify-content: space-around;
-    align-items: end;
-    height: 380px;
+    align-items: start;
     flex-wrap: wrap;
     padding: 20px;
+    display: flex;
+    align-items: start;
     
 }
 
@@ -80,6 +86,7 @@ main > .container-i-am > .item-i-am{
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 4px 4px #030401;
+    margin-bottom: 7px;
 
     display: flex;
     justify-content: center;
