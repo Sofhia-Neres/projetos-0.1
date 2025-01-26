@@ -104,10 +104,9 @@ main > .container-i-am > .item-i-am > p {
     font-size: 14px;
 }
 
-/* Estilo das skills */
+
 .skills {
     padding: 20px;
-    text-align: center;
 }
 
 .skills > h1 {
@@ -119,9 +118,9 @@ main > .container-i-am > .item-i-am > p {
     content: "";
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 55%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 60px;
     height: 10px;
     background-color: #0be6cc;
     z-index: -1;
@@ -137,7 +136,6 @@ main > .container-i-am > .item-i-am > p {
     width: 300px;
     height: 30px;
     border-radius: 5px;
-    margin-bottom: 10px;
     background-color: #ffffff;
     border: 4px solid black;
     overflow: hidden;
@@ -157,50 +155,4 @@ main > .container-i-am > .item-i-am > p {
     width: 100px;
 }
 
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-    header {
-        padding: 10px;
-    }
 
-    header > .foto-descricao {
-        gap: 5px;
-    }
-
-    header > .foto-descricao > .foto-perfil > img {
-        width: 100px;
-    }
-
-    header > .foto-descricao > .text-perfil {
-        width: 100%;
-    }
-
-    main > .container-i-am {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main > .container-i-am > .item-i-am {
-        width: 90%;
-        max-width: 300px;
-    }
-
-    .skills > .container-barra {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 480px) {
-    header > .background-header {
-        height: 100px;
-    }
-
-    main {
-        margin-top: 20px;
-    }
-
-    main > .container-i-am > .item-i-am > p {
-        font-size: 12px;
-    }
-}
