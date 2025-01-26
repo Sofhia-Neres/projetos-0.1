@@ -1,57 +1,98 @@
-@charset "UTF-8";
-
 *{
-    font-family: Arial;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: arial;
 }
 
-header{
+
+
+header > .background-header{
+    background-image: url(../img/3428.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 150px;
+
+    position: relative;
+}
+
+header > .foto-descricao{
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    transform: translateX(-50%);
+
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 4%;
-    background-color: black;
-    color: white;
+    flex-direction: column;
 }
 
-header > h1{
-    font-size: 20px;
+header > .foto-descricao > .foto-perfil > img{
+    width: 140px;
+    border-radius: 10px;
+    box-shadow: 8px 6px;
 }
 
-header > .nav-mobile{
-    display: none;
-}
-
-header > i{
-    font-size: 25px;
-}
-
-main{
+header > .foto-descricao > .text-perfil{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: start;
-    padding: 4%;
-    color: white;
-    background-color: #F196E5;
+    align-items: center;
 }
 
-main > .text > h2{
+header > .foto-descricao > .text-perfil > h1 > i{
+    background-color: #CBE60B;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+header > .foto-descricao > .text-perfil > p{
+    color: #74756E;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+header > .foto-descricao > .text-perfil > #p-descricao{
+    font-size: 15px;
+}
+
+main > .container-i-am{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 380px;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+main > .container-i-am > .item-i-am{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.44);
+
+    display: flex;
+    justify-content: center;
     position: relative;
-    font-size: 4.5em;
-    margin-top: 20%;
+    
 }
 
-main > .text > h2 > span{
+main > .container-i-am > .item-i-am > i{
+    font-size: 60px;
     position: absolute;
-    top: -45%;
-    left: 0%;
-    font-size: 70%;
+    top: -30%;
+    color: rgb(39, 39, 180);
 }
 
-main > .img-robo > img{
-    width:300px;
+main > .container-i-am > .item-i-am > p{
+    position: absolute;
+    top: 30%;
+    padding: 5px;
 }
